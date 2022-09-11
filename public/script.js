@@ -77,7 +77,7 @@ $(function () {
 
     $("#mute_button").click(function(){
         const enabled = myStream.getAudioTracks()[0].enabled
-        if(enables){
+        if(enabled){
             myStream.getAudioTracks()[0].enabled = false
             html = `<i class = "fas fa-microphone-slash"></i>`
             $("#mute_button").toggleClass("background_red")
